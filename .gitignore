@@ -1,0 +1,14 @@
+test_data
+src/test_data
+*.pyc
+*.o
+*.so
+*.png
+*.jpg
+*.mat
+*.pkl
+src/valres/
+*tags
+data/*
+*__pycache__
+reference/*

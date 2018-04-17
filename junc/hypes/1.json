@@ -1,0 +1,22 @@
+{ "trainlst":"",
+  "batchnorm": true,
+  "solver": {
+  	"batch_size": 1,
+    "opt": "SGD", 
+    "rnd_seed": 1, 
+    "epsilon": 1e-05, 
+  	"clip_norm": 1.0,
+	"momentum": 0.9
+  }, 
+  
+  "max_epochs": 20,
+  "steppoints": [8, 12, 16],
+  "num_classes": 2,
+  "focus_size": 1.5, 
+  "image_size": 480,
+  "grid_size": 60,
+  "region_size": 8, 
+  "max_len": 1, 
+  "num_bin": 15,
+  "loss_weights": [1.0, 0.1, 1.0, 0.1]
+}
