@@ -29,7 +29,7 @@ class opts():
         
         self.parser.add_argument('--criterion', dest='criterion', type=str, 
                                  default='balance',
-                                 help="specify criterion name, currently support normal/focal/center_normal.")
+                                 help="specify criterion name.")
         
         self.parser.add_argument('--decoder', dest='decoder', type=str, 
                                  default='junction',
@@ -47,8 +47,6 @@ class opts():
         self.parser.add_argument('-e', '--exp', dest='exp', default='1', 
                                  help='experiment name')
         ## the model parameters
-        self.parser.add_argument('--no-line', action='store_false', dest='rpn_only',
-                                 help="whether predict line segs.")
         self.parser.add_argument('--net', default='inception', dest='net', 
                                  help='specify feature network.')
         self.parser.add_argument('--test', action='store_true', dest='test',

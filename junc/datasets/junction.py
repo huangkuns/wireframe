@@ -53,10 +53,9 @@ class JunctionTest(data.Dataset):
         return self.nImages
 
 class Junction(data.Dataset):
-    def __init__(self, H, split='train', center=False, debug=False):
+    def __init__(self, H, split='train', debug=False):
         H = H
         self.split = split
-        self.output_center = center
         self.debug = debug
         
         self.grid_h = self.grid_w = H['grid_size']
