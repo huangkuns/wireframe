@@ -63,7 +63,7 @@ class Wireframe():
         self.theta_thresh = 0.5
 
         self.junc_dir = result_dir / 'junc' / self.exp / self.junc_epoch
-        self.line_dir = result_dir / 'linepx' / '1'
+        self.line_dir = result_dir / 'linepx' / '0'
         self.wireframe_dir = result_dir / 'wireframe_{}_{}/{}'.format(self.junc_thresh, self.theta_thresh, self.line_threshold)
         #check_dir(self.wireframe_dir)
 

@@ -105,7 +105,7 @@ class stackHourglassTrainer():
             self.progbar.update(i, [('Time', runTime), ('Loss', loss.data[0])])
 
             if i <= self.opt.visTest:
-                visImg.append(inputData.cpu().data)
+                visImg.append(inputData.cpu())
                 visImg.append(line_result.cpu().data)
                 visImg.append(line)
 
