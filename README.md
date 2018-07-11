@@ -83,4 +83,5 @@ year = {2018}
 ```
 
 ## License
-You can use this code for your research and other usages,  please credit our work when it helps you.
+You can use this code for your research and other usages, following BSD 2-Clause license.
+please credit our work when it helps you.
