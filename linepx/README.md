@@ -17,7 +17,10 @@ Please run `python main.py -h` for the general usage of the code.
 
 To preprocess the images and annotations:
 
-`python3 main.py --genLine`
+`python3 main.py --genLine  # training data`
+
+
+`python3 main.py --genLine --testOnly t  # test data`
 
 
 Training
