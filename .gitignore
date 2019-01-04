@@ -12,3 +12,5 @@ src/valres/
 data/*
 *__pycache__
 reference/*
+final
+final/*
