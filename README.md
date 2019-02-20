@@ -24,7 +24,7 @@ The code is written and tested in `python3`, please install all requirements in 
     - Download annotation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9g3_etkaVndKnqTdm), put it in __data/__, `unzip pointlines.zip`.
     - Download mat-files for wireframe evaluation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9txsENm9ibTKfxAlI), put it in __evaluation/wireframe/__, `unzip linemat.zip`.
     
-- Data Structure
+- Data Structure  
     Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
     |-- imagename: 	the name of the image  
     |-- img:         the image data  
