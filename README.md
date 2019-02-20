@@ -88,8 +88,7 @@ The code for evaluation is put in [evaluation/junc](evaluation/junc) and [evalua
 Expected precision/recall curve is like
 
 <figure class="half">
-    <img src="evaluation/junc/junc_1_16.png", width=300/>
-    <img src="evaluation/wireframe/1_0.5_0.5.png", width=300/>
+    <img src="evaluation/junc/junc_1_16.png"/> <img src="evaluation/wireframe/1_0.5_0.5.png"/>
 </figure>
 
 
