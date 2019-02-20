@@ -89,9 +89,9 @@ Expected precision/recall curve is like
 
 <center class="half">
     <img src="evaluation/junc/junc_1_16.png", width=400/> 
-    Junction
+    <center>Junction</center>
     <img src="evaluation/wireframe/1_0.5_0.5.png", width=400/>
-    Wireframe
+    <center>Wireframe</center>
 </center>
 
 
