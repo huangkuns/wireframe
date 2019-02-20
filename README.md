@@ -87,6 +87,10 @@ Note: `--json` means you put the hype-parameters in __junc/hypes/1.json__.
 The code for evaluation is put in [evaluation/junc](evaluation/junc) and [evaluation/wireframe](evaluation/wireframe).
 Expected precision/recall curve is like
 
+<p align="center">
+  <Junction width="400"  src="evaluation/junc/junc_1_16.png">
+</p>
+
 <figure class="half">
     <img src="evaluation/junc/junc_1_16.png", width=400/> 
 </figure>
