@@ -25,18 +25,16 @@ The code is written and tested in `python3`, please install all requirements in 
     - Download mat-files for wireframe evaluation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9txsENm9ibTKfxAlI), put it in __evaluation/wireframe/__, `unzip linemat.zip`.
     
 - Data Structure
-   Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
-
-    -- imagename: 	the name of the image
-    -- img:         the image data
-    -- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image
-    -- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points
-
-    -- pointlines:          
-    -- pointlines_index:	
-    -- junction:           	
-    -- theta:               
-    -- theta_lineIndex:	
+    Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
+    |-- imagename: 	the name of the image
+    |-- img:         the image data
+    |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image
+    |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points
+    |-- pointlines:          
+    |-- pointlines_index:	
+    |-- junction:           	
+    |-- theta:               
+    |-- theta_lineIndex:	
 
 - visualizing the wireframe
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
