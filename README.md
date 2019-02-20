@@ -22,25 +22,26 @@ The code is written and tested in `python3`, please install all requirements in 
 - Download the training data.
     - Download imgs from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9g37TnqyD9GD3UQwW), put it in __data/__, `unzip v1.1.zip`.
     - Download annotation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9g3_etkaVndKnqTdm), put it in __data/__, `unzip pointlines.zip`.
-    - Download mat-files for wireframe evaluation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9txsENm9ibTKfxAlI), put it in __evaluation/wireframe/__, `unzip linemats.zip`.
+    - Download mat-files for wireframe evaluation from [OneDrive](https://1drv.ms/u/s!AqQBtmo8Qg_9txsENm9ibTKfxAlI), put it in __evaluation/wireframe/__, `unzip linemat.zip`.
+    
 - Data Structure
-Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
+  Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
 
--- imagename: 	the name of the image
--- img:         the image data
--- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image
--- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points
+    -- imagename: 	the name of the image
+    -- img:         the image data
+    -- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image
+    -- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points
 
--- pointlines:          
--- pointlines_index:	
--- junction:           	
--- theta:               
--- theta_lineIndex:	
+    -- pointlines:          
+    -- pointlines_index:	
+    -- junction:           	
+    -- theta:               
+    -- theta_lineIndex:	
 
 - visualizing the wireframe
 
 After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
-    ```
+    ```python
     for idx, (i, j) in enumerate(lines, start=0):
         x1, y1 = points[i]
         x2, y2 = points[j]
