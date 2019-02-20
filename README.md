@@ -28,15 +28,15 @@ The code is written and tested in `python3`, please install all requirements in 
     Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:
     |-- imagename: 	the name of the image  
     |-- img:         the image data  
-    |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image
-    |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points
-    |-- pointlines:          
-    |-- pointlines_index:	
-    |-- junction:           	
-    |-- theta:               
-    |-- theta_lineIndex:	
+    |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image  
+    |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points  
+    |-- pointlines:            
+    |-- pointlines_index:  	
+    |-- junction:             	
+    |-- theta:                 
+    |-- theta_lineIndex:  	
 
-- visualizing the wireframe
+- visualizing the wireframe.  
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
 <pre><code class="python">
  for idx, (i, j) in enumerate(lines, start=0):
