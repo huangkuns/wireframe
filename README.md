@@ -30,20 +30,19 @@ The code is written and tested in `python3`, please install all requirements in 
     |-- img:         the image data  
     |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image  
     |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points  
-    |-- pointlines:            
-    |-- pointlines_index:  	
-    |-- junction:             	
-    |-- theta:                 
-    |-- theta_lineIndex:  	
+    |-- pointlines:     the associated line set of each point        
+    |-- pointlines_index:       line indexes of lines in 'pointlines'  
+    |-- junction:       the junction locations, derived from the 'points' and 'lines'                 	
+    |-- theta:      the angle values of branches of each junction                   
 
 - visualizing the wireframe.  
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
-<pre><code class="python">
- for idx, (i, j) in enumerate(lines, start=0):
-    x1, y1 = points[i]
-    x2, y2 = points[j]
-    cv2.line(im, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2, cv2.LINE_8)
-</code></pre>
+    <pre><code class="python">
+     for idx, (i, j) in enumerate(lines, start=0):
+        x1, y1 = points[i]
+        x2, y2 = points[j]
+        cv2.line(im, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2, cv2.LINE_8)
+    </code></pre>
 
 - Preprocess data.
     ```
