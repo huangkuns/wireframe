@@ -26,6 +26,7 @@ The code is written and tested in `python3`, please install all requirements in 
     
 - Data Structure  
     Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:  
+    ```shell
     *.pkl  
             |-- imagename: 	the name of the image  
             |-- img:         the image data  
@@ -35,7 +36,7 @@ The code is written and tested in `python3`, please install all requirements in 
             |-- pointlines_index:       line indexes of lines in 'pointlines'  
             |-- junction:       the junction locations, derived from the 'points' and 'lines'  
             |-- theta:      the angle values of branches of each junction                   
-
+    ```
 - visualizing the wireframe.  
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
     <pre><code class="python">
