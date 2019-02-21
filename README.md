@@ -28,14 +28,14 @@ The code is written and tested in `python3`, please install all requirements in 
     Each .pkl file contains the annotated wireframe of an image, and it consists of the following variables:  
     ```shell
     *.pkl  
-            |-- imagename: 	the name of the image  
-            |-- img:         the image data  
-            |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image  
-            |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points  
-            |-- pointlines:     the set of associated lines of each point        
-            |-- pointlines_index:       line indexes of lines in 'pointlines'  
-            |-- junction:       the junction locations, derived from the 'points' and 'lines'  
-            |-- theta:      the angle values of branches of each junction                   
+        |-- imagename: 	the name of the image  
+        |-- img:         the image data  
+        |-- points:      the set of points in the wireframe, each point is represented by its (x,y)-coordinates in the image  
+        |-- lines:       the set of lines in the wireframe, each line is represented by the indices of its two end-points  
+        |-- pointlines:     the set of associated lines of each point        
+        |-- pointlines_index:       line indexes of lines in 'pointlines'  
+        |-- junction:       the junction locations, derived from the 'points' and 'lines'  
+        |-- theta:      the angle values of branches of each junction                   
     ```
 - visualizing the wireframe.  
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
@@ -45,6 +45,12 @@ The code is written and tested in `python3`, please install all requirements in 
         x2, y2 = points[j]
         cv2.line(im, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2, cv2.LINE_8)
     </code></pre>
+  ```python
+    for idx, (i, j) in enumerate(lines, start=0):
+        x1, y1 = points[i]
+        x2, y2 = points[j]
+        cv2.line(im, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2, cv2.LINE_8)
+  ```
 
 - Preprocess data.
     ```
