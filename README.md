@@ -39,12 +39,6 @@ The code is written and tested in `python3`, please install all requirements in 
     ```
 - visualizing the wireframe.  
   After loading the .pkl file, you can run something like the following in Python to visualize the wireframe:
-    <pre><code class="python">
-     for idx, (i, j) in enumerate(lines, start=0):
-        x1, y1 = points[i]
-        x2, y2 = points[j]
-        cv2.line(im, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2, cv2.LINE_8)
-    </code></pre>
   ```python
     for idx, (i, j) in enumerate(lines, start=0):
         x1, y1 = points[i]
