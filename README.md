@@ -121,4 +121,4 @@ year = {2018}
 ```
 
 ## License
-You can use this code/dataset for your research and other usages, following BSD 2-Clause license.
+You can use this code/dataset for your research and other usages, following MIT License.
