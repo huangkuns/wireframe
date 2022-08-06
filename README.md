@@ -20,7 +20,7 @@ The code is written and tested in `python3`, please install all requirements in 
 
 ## Prepare data
 - Download the training data.
-    - Imgs, train annotaions, test annotations are all available at [BaiduPan](https://pan.baidu.com/s/1fnj5WZEf4kXbag1zhnwmLQ) (passwd: wf18).
+    - Imgs, train annotaions, test annotations are all available at [BaiduPan](https://pan.baidu.com/s/11CKr5s0zHnuVKsJVXianxA?pwd=wf18) (passwd: wf18).
     - You can also download data from onedrive: [onedrive](https://1drv.ms/u/s!AqQBtmo8Qg_9uHpjzIybaIfyJ-Zf?e=Fofbch)(no passwd required).
  
 - put training data in __data/__ and test annotation in put it in __evaluation/wireframe/__,
